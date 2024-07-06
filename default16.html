@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>dom manupulations</title>
+        <script>
+            function changestyle(){
+                var element=document.getElementsByClassName("para");
+                for(x=0;x<element.length;x++){
+                element[x].style.color="red";
+            }
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <p class="para">this is  a para 1</p>
+        <p>this is  a para 2</p>
+        <p class="para">this is a para 3</p>
+        <p>This a paragrapg tag </p>
+        <p>this is a para 5</p>
+        <a class="para" >thia is an ancor tag</a>
+        <br>
+        <button onclick="changestyle()">click me</button>
+
+    </body>
+</html>

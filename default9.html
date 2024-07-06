@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>objects</title>
+
+        <script>
+           /*var cars=
+            {
+                car_brand:"tesla",
+                car_model:3,
+                car_price:35000,
+                teslaautopilot:function()
+                {
+                    document.write("<h2>this ias an autopilot</h2>");
+                }
+            }
+            cars.teslaautopilot();
+           document.write("<h2>"+cars.teslaautopilot()+"</h2>");*/
+           function car(car_brand,car_model,car_price)
+           {
+            this.cars_brand=car_brand;
+            this.cars_model=car_model;
+            this.cars_price=car_price;
+            this.tesla=function()
+            {
+                document.write("<h2>this is a tesla car</h2>");
+
+            }
+           }
+           var c1=new car("tesla","model 3",35000);
+           var c2=new car("bmw","model 3",45000);
+           var c3=new car("benz","series 7",50000);
+           c2.tesla();
+           c1.tesla();
+           document.write("<h2>"+c2.cars_price+"</h2>");
+           document.write("<h1>"+c3.cars_brand+"</h2>");
+            document.write("<h1>"+c2.cars_brand+"</h1>")
+
+
+        </script>
+    </head>
+</html>

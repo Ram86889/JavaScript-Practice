@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>forms</title>
+        <script>
+            function validate()
+            {
+                var username=document.getElementById("user");
+                var password=document.getElementById("pass");
+                if(username.value.trim()==""||password.vaue.trim()=="")
+                {
+                    alert("no blank vaues allowed")
+                    return false;
+                }
+                else{
+                    true;
+
+                }
+            }
+
+
+        </script>
+    </head>
+    <head>
+        <form onsubmit=" return validate()" action="msg.html">
+            <input id="user" type="text" placeholder="username">
+            <br><br>
+            <input id="pass" type="password" placeholder="password">
+            <br><br>
+            <button type="submit">submit</button>
+            
+
+        </form>
+         
+    </head>
+</html>

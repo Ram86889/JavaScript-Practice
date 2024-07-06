@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>dom manupuilations</title>
+        <script>
+            function fn1()
+            {
+                var select=document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value)
+            }
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="ss">simpel snippets</option>
+            <option value="Ts">telusuko learning</option>
+            <option value="Dmk">DMK</option>
+            
+            
+        </select><br><br>
+        <button onclick="fn1()" id="btn1">click me</button>
+
+    </body>
+</html>

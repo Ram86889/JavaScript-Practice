@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>forms</title>
+        <script>
+            function validate()
+            {
+                var username=document.getElementById("user");
+                var password=document.getElementById("pass");
+                if(username.value.trim()=="")
+
+                {
+                   // alert("blank username");
+                    username.style.border=" solid red 3px"
+                    password.style.border=" solid red 3px"
+                    document.getElementById("lbl1").style.visibility="visible"
+                    document.getElementById("lbl2").style.visibility="visible"
+                                    return false;
+                }
+                else if(password.value.trim()==""){
+                    alert("blank password")
+                    return false;
+                }
+                else if(password.value.trim().length<5)
+                {
+                    alert("password is to short");
+                    return false;
+                }
+                else{
+                    true;
+                }
+
+            }
+            
+
+
+        </script>
+    </head>
+    <head>
+        <form onsubmit=" return validate()" action="msg.html">
+            <input id="user" type="text" placeholder="username_">
+            <label id="lbl1" style="color:red;visibility:hidden">invalid</label>
+            <br><br>
+            <input id="pass" type="password" placeholder="password">
+            <label id="lbl2" style="color:red;visibility:hidden">invalid</label>
+            <br><br>
+            <button type="submit">submit</button>
+            
+
+        </form>
+         
+    </head>
+</html>

@@ -1,0 +1,31 @@
+ <html>
+    <head>
+        <title>dom manupulations</title>
+        <script>
+            //dom manupulations get elelment by tag name
+            function changestyle(){
+
+            var para=document.getElementsByTagName("p");
+           // para[0].style.fontSize=25;
+          //  para[1].style.color="red";
+           // para[2].style.fontWeight="bold";
+           //para[3].style.fontStyle="italic";
+          //  para[4].style.fontFamily ="arial";
+          for(var i=0;i<para.length;i++)
+          {
+          para[i].style.fontFamily="cursive";
+          }
+            }
+
+        </script>
+    </head>
+    <body>
+        <p>this is  a para 1</p>
+        <p>this is  a para 2</p>
+        <p>this is a para 3</p>
+        <p>This a paragrapg tag </p>
+        <p>this is a para 5</p>
+        <br>
+        <button onclick="changestyle()">click me</button>
+    </body>
+ </html>

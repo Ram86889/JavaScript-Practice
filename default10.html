@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>objects</title>
+        <script>
+            var cars=
+            {
+                car_brand:"tesla",
+                car_model:3,
+                car_price:35000,
+                teslaautopilot:function()
+                {
+                document.write("<h2>this is an autopilot</h2>");
+                }
+            }
+            cars.fueltype="eletric";
+            cars.price="50000"
+
+          
+           document.write("<h2>"+(cars.fueltype)+"</h2>");
+             cars.teslaautopilot();
+             delete cars.car_brand
+             document.write("<h2>"+(cars.price)+"</h2>");
+             cars.enginetype="10th model";
+             document.write("<h1>"+cars.enginetype+"</h1>");
+             document.write("<h2>"+cars.car_brand+"</h2>");
+        </script>
+    </head>
+</html>
